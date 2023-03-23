@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Level 1"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:background="#FFAA33"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:stretchColumns="0,1,2,3"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+
+            >
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:background="@android:color/transparent"/>
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:background="@android:color/transparent"/>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:textSize="8pt"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Level"
+        android:visibility="invisible"
+        android:background="#FFAA33"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:visibility="invisible"
+        android:background="#FFAA33"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/HomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:visibility="invisible"
+        android:background="#FFAA33"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
